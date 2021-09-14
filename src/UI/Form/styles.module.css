@@ -1,0 +1,50 @@
+.btn {
+  font-family: Montserat, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  font-size: 14px;
+  padding: 15px 40px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.btn__big {
+  font-size: 20px;
+  padding: 7px 60px;
+  color: #FF685B;
+  font-weight: 500;
+  border: 2px solid #FF685B;
+  border-radius: 7px;
+
+  background-color: white;
+}
+
+.btn__red {
+  color: #ffffff;
+  border: none;
+  background-color: #FF685B;
+}
+
+.btn__white {
+  color: #FF685B;
+  border: 1px solid #FF685B;
+
+  background-color: white;
+}
+
+.btn__red--min {
+  color: #ffffff;
+  border: none;
+  background-color: #FF685B;
+  padding: 15px 30px;
+}
+
+.btn__white--min {
+  color: #FF685B;
+  border: 1px solid #FF685B;
+
+  background-color: white;
+  padding: 15px 30px;
+}
