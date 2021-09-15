@@ -1,50 +1,55 @@
-.btn {
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: Montserat, sans-serif;
-  text-align: center;
-  letter-spacing: 1px;
-  cursor: pointer;
-
-  font-size: 14px;
-  padding: 15px 40px;
-  font-weight: 700;
-  border-radius: 5px;
+  font-weight: 400;
 }
 
-.btn__big {
-  font-size: 20px;
-  padding: 7px 60px;
-  color: #FF685B;
-  font-weight: 500;
-  border: 2px solid #FF685B;
+.h3 {
+  font-size: 1.5rem;
+  color: #252B42;
+}
+
+.input {
   border-radius: 7px;
-
-  background-color: white;
-}
-
-.btn__red {
-  color: #ffffff;
-  border: none;
-  background-color: #FF685B;
-}
-
-.btn__white {
-  color: #FF685B;
   border: 1px solid #FF685B;
+  padding: 10px 30px;
+  margin-bottom: 20px;
 
-  background-color: white;
+  font-size: 1.5rem;
+  color: #252B42;
+
+  outline: none;
 }
 
-.btn__red--min {
-  color: #ffffff;
-  border: none;
-  background-color: #FF685B;
-  padding: 15px 30px;
+.label {
+  font-size: 1rem;
+  color: #E74040;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
-.btn__white--min {
-  color: #FF685B;
-  border: 1px solid #FF685B;
+@media all and (max-width: 400px) {
+  .input {
+    max-width: 380px;
+  }
+}
 
-  background-color: white;
-  padding: 15px 30px;
+@media all and (max-width: 380px) {
+  .input {
+    max-width: 340px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .input {
+    max-width: 320px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .input {
+    max-width: 300px;
+  }
 }

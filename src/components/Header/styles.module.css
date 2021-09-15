@@ -1,0 +1,63 @@
+.header {
+  padding: 31px 70px 25px;
+
+  border-bottom: 1px solid #000000;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  max-width: 53px;
+  height: auto;
+}
+
+.link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  color: #737373;
+  text-decoration: none;
+  font-size: 1rem;
+
+  margin-right: 60px;
+}
+
+
+@media all and (max-width: 1024px) {
+
+}
+
+
+@media all and (max-width: 768px) {
+  .link {
+    margin-right: 30px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header {
+    padding: 31px 20px 25px;
+  }
+
+  .link {
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 408px) {
+  .header {
+    padding: 21px 10px 22px;
+  }
+
+  .link {
+    margin-right: 10px;
+  }
+}

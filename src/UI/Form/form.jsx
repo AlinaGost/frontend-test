@@ -1,11 +1,19 @@
 import React from 'react';
 import styles from './styles.module.css';
-import {NavLink} from "react-router-dom";
+import Button from "../Button/button";
 
-const Button = ({...props}) => {
+
+const Form = (props) => {
   return (
-      <button {...props} className={styles.btn + ' ' + styles[`${props.class}`]}>{props.title}</button>
+    <div className={styles.form}>
+      <h3 className={styles.h3} >Login ...</h3>
+      <label className={styles.label} htmlFor={'login'}>Login</label>
+      <input required className={styles.input} type="text" id={'login'}/>
+      <label className={styles.label} htmlFor={'password'}>Password</label>
+      <input required id={'password'} className={styles.input} type="text"/>
+      <Button onClick={() => props.setVisible(false)} class={'btn__red--min'} title={'Войти'}/>
+    </div>
   );
 };
 
-export default Button;
+export default Form;

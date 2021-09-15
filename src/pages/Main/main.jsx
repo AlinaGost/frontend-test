@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './styles.module.css';
-import Header from "../Header/header";
+import Header from "../../components/Header/header";
 import Button from "../../UI/Button/button";
-import Cards from "../Cards/cards";
+import Cards from "../../components/Cards/cards";
+import Modal from "../../UI/Modal/modal";
+import {NavLink} from "react-router-dom";
 
 const Main = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <div>
-      <Header title={'Контакты'} />
+      <Header setModal={setModal} title={'Войти'} />
 
       <div className="container">
         <div className={styles.header}>
@@ -16,15 +20,21 @@ const Main = () => {
           </h1>
 
           <div className={styles.buttons}>
-            <Button class={'btn__red'} title={'Войти'}/>
-            <Button class={'btn__white'} title={'Контакты'} />
+            <Button onClick={() => setModal(true)} class={'btn__red'} title={'Войти'}/>
+            <NavLink to={'/contacts'}>
+              <Button  class={'btn__white'} title={'Контакты'} />
+            </NavLink>
+
           </div>
         </div>
         <Cards />
       </div>
 
+      <Modal visible={modal} setVisible={setModal} />
+
     </div>
   );
 };
+
 
 export default Main;

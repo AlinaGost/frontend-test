@@ -19,3 +19,45 @@
 .header {
   margin-bottom: 96.5px;
 }
+
+
+@media all and (max-width: 768px) {
+  .h1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .h1 {
+    font-size: 2.6rem;
+    margin-top: 70px;
+  }
+
+  .header {
+    margin-bottom: 75px;
+  }
+}
+
+@media all and (max-width: 546px) {
+  .h1 {
+    font-size: 2.5rem;
+    line-height: 50px;
+    margin-top: 55px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .h1 {
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+}

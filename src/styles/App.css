@@ -1,1 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.App {
+  font-size: 15px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1075px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

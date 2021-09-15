@@ -9,7 +9,7 @@
   display: none;
 }
 
-.modal_content {
+.modal__content {
   padding: 25px;
   background: white;
   border-radius: 15px;
@@ -22,3 +22,35 @@
   align-items: center;
 }
 
+
+
+@media all and (max-width: 420px) {
+  .modal__content {
+    padding: 10px;
+    max-width: 400px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .modal__content {
+    max-width: 390px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .modal__content {
+    max-width: 350px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .modal__content {
+    max-width: 330px;
+  }
+}
+
+@media all and (max-width: 330px) {
+  .modal__content {
+    max-width: 320px;
+  }
+}

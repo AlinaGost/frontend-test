@@ -1,30 +1,17 @@
 import React from 'react';
 import styles from './styles.module.css';
 import Header from "../../components/Header/header";
-import Button from "../../UI/Button/button";
-import Cards from "../../components/Cards/cards";
 
-const Main = () => {
+
+const Contacts = () => {
   return (
     <div>
-      <Header title={'Контакты'} />
-
-      <div className="container">
-        <div className={styles.header}>
-          <h1 className={styles.h1}>
-            Место для получения медицинской помощи
-          </h1>
-
-          <div className={styles.buttons}>
-            <Button class={'btn__red'} title={'Войти'}/>
-            <Button class={'btn__white'} title={'Контакты'} />
-          </div>
-        </div>
-        <Cards />
-      </div>
-
+     <Header title={'Выйти'} />
+     <div className="container">
+       <h1 className={styles.h1}>Контакты</h1>
+     </div>
     </div>
   );
 };
 
-export default Main;
+export default Contacts;

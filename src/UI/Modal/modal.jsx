@@ -1,13 +1,17 @@
 import React from 'react';
 import styles from './styles.module.css';
-import Button from "../../UI/Button/button";
+import Form from "../Form/form";
 
-const Modal = () => {
+const Modal = ({visible, setVisible}) => {
+  const rootClasses = [styles.modal];
+  if(visible) {
+    rootClasses.push(styles.active);
+  }
   return (
-    <div className={styles.auth}>
-      <input type="text"/>
-      <input type="text"/>
-      <Button to={'/account'} class={'btn__red'} title={'Войти'} />
+    <div className={rootClasses.join(' ')} onClick={() => setVisible(false)}>
+      <div className={styles.modal__content} onClick={(e) => e.stopPropagation()}>
+        <Form setVisible={setVisible} />
+      </div>
     </div>
   );
 };
