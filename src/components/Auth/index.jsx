@@ -1,8 +1,8 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
 import { useHistory } from "react-router-dom";
-import Form from "../Form/form";
-import Button from "../../UI/Button/button";
+import Form from "../Form";
+import Button from "../../UI/Button";
 import styles from './styles.module.css';
 
 const AuthForm = () => {
@@ -40,7 +40,7 @@ const AuthForm = () => {
             {errors?.password?.type === "required" && <p className={styles.error}>Поле обязательно для заполнения</p>}
             {errors?.password?.type === "minLength" && <p className={styles.error}>Пароль должен содержать не менее 8 символов</p>}
 
-            <Button type='submit'  class={'btn__red--min'} title={'Войти'} />
+            <Button type='submit'  addClass={'btn__red--min'} title={'Войти'} />
         </Form>
       </div>
     )

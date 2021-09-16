@@ -1,14 +1,11 @@
 import React from "react";
 import './styles/App.css';
-import Main from "./pages/Main/main";
+import Main from "./pages/Main";
 import {BrowserRouter, Route} from "react-router-dom";
 import Account from "./pages/Account";
 import Contacts from "./pages/Contacts";
 
-
-
-function App(props) {
-
+function App() {
   return (
     <BrowserRouter>
       <div className={'App'}>

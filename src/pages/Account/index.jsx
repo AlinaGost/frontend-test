@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import { useHistory } from "react-router-dom";
+import { useHistory, NavLink } from "react-router-dom";
+import Header from "../../components/Header";
+import Button from "../../UI/Button";
 import styles from './styles.module.css';
-import Header from "../../components/Header/header";
-import Button from "../../UI/Button/button";
-import {NavLink} from "react-router-dom";
 
-const Account = (props) => {
-  const [user, setState] = useState('');
+const Account = () => {
+  const [user, setUser] = useState('');
   const history = useHistory();
 
   useEffect(() => {
@@ -16,7 +15,7 @@ const Account = (props) => {
      history.push('/')
    }
 
-   setState(JSON.parse(jsonUser));
+   setUser(JSON.parse(jsonUser));
   }, [])
   return (
     <div >
@@ -25,10 +24,10 @@ const Account = (props) => {
         <h1 className={styles.h1}> Привет, {user.name}!</h1>
         <div className={styles.buttons}>
           <NavLink to={'/'}>
-            <Button  class={'btn__red--min'} title={'Выйти из аккаунта'}/>
+            <Button  addClass={'btn__red--min'} title={'Выйти из аккаунта'}/>
           </NavLink>
           <NavLink to={'/contacts'}>
-            <Button  class={'btn__white--min'} title={'Перейти в контакты'} />
+            <Button  addClass={'btn__white--min'} title={'Перейти в контакты'} />
           </NavLink>
         </div>
       </div>

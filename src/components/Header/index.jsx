@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './styles.module.css';
 import logo from './../../img/logo.svg';
-import Button from "../../UI/Button/button";
+import Button from "../../UI/Button";
 import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
-
   return (
     <div className={styles.header}>
       <div className={styles.inner}>
@@ -14,7 +13,12 @@ const Header = (props) => {
         </NavLink>
         <div>
           <NavLink className={styles.link} to={'contacts'}>Контакты</NavLink>
-          <Button onClick={() => props.setModal(true)} class={'btn__big'} title={props.title} />
+          {props.title === 'Войти' ?
+            <Button onClick={() => props.setModal(true)} addClass={'btn__big'} title={props.title} /> :
+            <NavLink to={'/'} >
+              <Button  addClass={'btn__big'} title={props.title} />
+            </NavLink>
+          }
         </div>
       </div>
     </div>
