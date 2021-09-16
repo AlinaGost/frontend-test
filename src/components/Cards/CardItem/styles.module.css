@@ -47,7 +47,6 @@
   color: #737373;
 }
 
-
 @media all and (max-width: 1024px) {
   .item {
     max-width: 1024px;

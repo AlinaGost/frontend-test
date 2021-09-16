@@ -22,8 +22,6 @@
   align-items: center;
 }
 
-
-
 @media all and (max-width: 420px) {
   .modal__content {
     padding: 10px;

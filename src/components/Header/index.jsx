@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import logo from './../../img/logo.svg';
 import Button from "../../UI/Button";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
   return (
