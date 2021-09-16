@@ -5,6 +5,7 @@ import Button from "../../UI/Button/button";
 import Cards from "../../components/Cards/cards";
 import Modal from "../../UI/Modal/modal";
 import {NavLink} from "react-router-dom";
+import AuthForm from "../../components/Auth";
 
 const Main = () => {
   const [modal, setModal] = useState(false);
@@ -30,7 +31,9 @@ const Main = () => {
         <Cards />
       </div>
 
-      <Modal visible={modal} setVisible={setModal} />
+      <Modal visible={modal} setVisible={setModal} >
+        <AuthForm />
+      </Modal>
 
     </div>
   );

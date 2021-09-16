@@ -5,6 +5,7 @@ import Button from "../../UI/Button/button";
 import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
+
   return (
     <div className={styles.header}>
       <div className={styles.inner}>
@@ -13,7 +14,7 @@ const Header = (props) => {
         </NavLink>
         <div>
           <NavLink className={styles.link} to={'contacts'}>Контакты</NavLink>
-          <Button onClick={() => props.setModal(true)} class={'btn__big'} title={props.title}/>
+          <Button onClick={() => props.setModal(true)} class={'btn__big'} title={props.title} />
         </div>
       </div>
     </div>

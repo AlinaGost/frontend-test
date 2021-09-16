@@ -1,10 +1,3 @@
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Montserat, sans-serif;
-  font-weight: 400;
-}
 
 .h3 {
   font-size: 1.5rem;
@@ -23,9 +16,15 @@
   outline: none;
 }
 
+.error {
+  color: #E74040;
+  font-size: 0.8rem;
+  margin-top: -10px;
+}
+
 .label {
   font-size: 1rem;
-  color: #E74040;
+  color: #252B42;
   margin-bottom: 5px;
   padding: 5px;
 }
